@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header">#00518c</color>
+    <color name="text">#E8DACF</color>
+    <color name="main">#37AAFF</color>
+    <color name="touch">#FFFFFF</color>
+    <color name="on">#E88C7A</color>
+</resources>
