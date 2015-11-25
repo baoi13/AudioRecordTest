@@ -23,24 +23,18 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends  Activity {
 
 	private static final String LOG_TAG = "AudioRecordTest";
 	private static String mFileName = null;
 
-//	private RecordButton mRecordButton = null;
 	private MediaRecorder mRecorder = null;
-
-//	private PlayButton mPlayButton = null;
 	private MediaPlayer mPlayer = null;
 
 	boolean mStartRecording = true;
 	boolean mStartPlaying = true;
 
 	private long startTime = 0L;
-	private long stopTime = 0L;
 
 	private Handler customHandler = new Handler();
 
@@ -51,13 +45,7 @@ public class MainActivity extends  Activity {
 	private TextView statusTime;
 	private TextView statusText;
 
-	// データフォーマット
-	private SimpleDateFormat sdf1;
-	private SimpleDateFormat sdf2;
-
-
-
-
+	// 録音ボタンのフラグで処理を決めます
 	private void onRecord(boolean start){
 		if(start){
 			startRecording();
@@ -66,6 +54,7 @@ public class MainActivity extends  Activity {
 		}
 	}
 
+	// 再生ボタンのフラグで処理を決めます
 	private void onPlay(boolean start){
 		if(start){
 			startPlaying();
@@ -74,6 +63,7 @@ public class MainActivity extends  Activity {
 		}
 	}
 
+	// 再生処理
 	private void startPlaying(){
 		mPlayer = new MediaPlayer();
 		try{
@@ -85,11 +75,13 @@ public class MainActivity extends  Activity {
 		}
 	}
 
+	// 再生停止
 	private void stopPlaying() {
 		mPlayer.release();
 		mPlayer = null;
 	}
 
+	// 録音開始
 	private void startRecording(){
 		mRecorder = new MediaRecorder();
 		mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
@@ -105,19 +97,11 @@ public class MainActivity extends  Activity {
 		mRecorder.start();
 	}
 
+	// 録音停止
 	private void stopRecording(){
 		mRecorder.stop();
 		mRecorder.release();
 		mRecorder = null;
-	}
-
-	// 録音のタイマー
-	private void recordTimer(){
-		if(!mStartRecording) {
-
-		}else{
-
-		}
 	}
 
 	// タイマー用スレッド
@@ -148,9 +132,10 @@ public class MainActivity extends  Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		// タイマーのデータフォーマットを指定
-		sdf1 = new SimpleDateFormat("HH:mm:ss SSS");
-		sdf2 = new SimpleDateFormat("mm:ss SSS");
+//		sdf1 = new SimpleDateFormat("HH:mm:ss SSS");
+//		sdf2 = new SimpleDateFormat("mm:ss SSS");
 
+		// スクロールビューに録音ファイルの数だけボタンを追加します
 		initButton();
 
 		// 録音ボタン
@@ -211,10 +196,10 @@ public class MainActivity extends  Activity {
 		});
 	}
 
+	// クリックリスナーを設定してください
 	// ScrollView にボタンを追加
 	private void initButton(){
 		LinearLayout linearLayout = (LinearLayout)findViewById(R.id.linearscrollview);
-		ScrollView scrollView = (ScrollView)findViewById(R.id.scrollview);
 		for(int i=0; i<10; i++) {
 			Button button = new Button(this);
 			button.setText("履歴"+(i+1));
