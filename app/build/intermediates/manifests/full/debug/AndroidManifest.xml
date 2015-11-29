@@ -7,8 +7,9 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="21" />
-
+    <!-- 外部SDに書き込む権限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 音声の録音の権限 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -25,6 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeTouchListenerTestActivity" />
+        <activity android:name="com.nhaarman.listviewanimations.itemmanipulation.dragdrop.DynamicListViewTestActivity" />
     </application>
 
 </manifest>
