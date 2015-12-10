@@ -10,8 +10,12 @@
     <!-- 外部SDに書き込む権限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 音声の録音の権限 -->
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
+    <!-- ロック画面を操作する権限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- バイブレーションを行う権限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -27,6 +31,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- サービスの追加 -->
+        <!-- exported="false" 他のアプリから利用不可 -->
+        <service android:name=".MyService"
+            android:enabled="true"
+            android:exported="false"/>
     </application>
 
 </manifest>

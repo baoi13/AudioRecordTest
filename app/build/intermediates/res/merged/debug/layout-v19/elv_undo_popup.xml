@@ -40,4 +40,4 @@
 		android:layout_height="match_parent"
 		android:shadowColor="#BB000000"
 		android:shadowRadius="2.75"/>
-</LinearLayout><!-- From: file:/home/timroes/code/EnhancedListView/EnhancedListView/src/main/res/layout-v19/elv_undo_popup.xml --><!-- From: file:/Users/lena/Library/Android/sdk/AudioRecordTest1/app/build/intermediates/exploded-aar/de.timroes.android/EnhancedListView/0.3.4/res/layout-v19/elv_undo_popup.xml -->
+</LinearLayout><!-- From: file:/home/timroes/code/EnhancedListView/EnhancedListView/src/main/res/layout-v19/elv_undo_popup.xml --><!-- From: file:/Users/lena/Desktop/個人製作/2015-12-7/AudioRecordTest1/app/build/intermediates/exploded-aar/de.timroes.android/EnhancedListView/0.3.4/res/layout-v19/elv_undo_popup.xml -->

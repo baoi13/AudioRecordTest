@@ -2,4 +2,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 	<solid android:color="@color/elv_btn_pressed"/>
 	<corners android:radius="3dp"/>
-</shape><!-- From: file:/home/timroes/code/EnhancedListView/EnhancedListView/src/main/res/drawable/elv_undo_btn_bg_pressed.xml --><!-- From: file:/Users/lena/Library/Android/sdk/AudioRecordTest1/app/build/intermediates/exploded-aar/de.timroes.android/EnhancedListView/0.3.4/res/drawable/elv_undo_btn_bg_pressed.xml -->
+</shape><!-- From: file:/home/timroes/code/EnhancedListView/EnhancedListView/src/main/res/drawable/elv_undo_btn_bg_pressed.xml --><!-- From: file:/Users/lena/Desktop/個人製作/2015-12-7/AudioRecordTest1/app/build/intermediates/exploded-aar/de.timroes.android/EnhancedListView/0.3.4/res/drawable/elv_undo_btn_bg_pressed.xml -->

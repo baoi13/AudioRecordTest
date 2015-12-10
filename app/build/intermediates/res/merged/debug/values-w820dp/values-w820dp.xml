@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/lena/Library/Android/sdk/AudioRecordTest1/app/src/main/res/values-w820dp/dimens.xml -->
+    <!-- From: file:/Users/lena/Desktop/個人製作/2015-12-7/AudioRecordTest1/app/src/main/res/values-w820dp/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">64dp</dimen>
 </resources>
